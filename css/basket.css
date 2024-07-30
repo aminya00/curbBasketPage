@@ -1,0 +1,183 @@
+.basket-page-container{
+    padding: 48px;
+    gap: 2rem;
+    width: 100%;
+}
+.product-basket-container{
+    direction: rtl;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+}
+.main-boxes-title{
+    margin-bottom:0 ;
+}
+.product-basket,.product-basket-info,.product-basket-name-info,.product-basket-more-info,.product-basket-color,.product-basket-size,.product-basket-price-remove,.product-basket-price,.product-basket-remove,.basket-page-container,.promo-code-container,.promo-code-container button,.price-calcalu-container,.price-of-product,.total-price-container,.price-of-delivery,.price-of-product div,.price-of-delivery div,.product-basket-container,.pay-price-btn{
+    display: flex;
+}
+.product-basket{
+    padding: 20px;
+    border: 1px solid var(--main-green);
+    border-radius: 12px;
+    box-shadow: 0 1px 5px var(--main-green);
+}
+.product-basket-img{
+    width: 192px;
+    height: 192px;
+    border-radius: 12px;
+}
+.product-basket-img img{
+    width: 192px;
+    height: 192px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.product-basket-info{
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.product-basket-name-info{
+    flex-direction: column;
+    gap: 16px;
+}
+.product-basket-name{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5555;
+    color: var(--main-white);
+}
+.product-basket-more-info{
+    flex-direction: column;
+    font-size: 16px;
+    align-items: flex-start;
+    color: var(--main-white);
+    gap: 4px;
+}
+.product-basket-category{
+    font-weight: bold;
+    color: var(--main-green) !important;
+
+}
+.product-basket-color,.product-basket-size,.product-basket-price{
+    gap: 5px;
+}
+.product-basket-price{
+    margin-bottom: 20px;
+}
+.product-basket-remove{
+    justify-content: center;
+    cursor: pointer;
+}
+.product-basket-price-remove{
+    flex-direction: column;
+    color: var(--main-white);
+    font-weight: bold;
+
+}
+.product-basket-count{
+    width: 96px;
+    height: 56px;
+    border: 1px solid var(--main-white);
+}
+.product-basket-select{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-size: 18px;
+    padding: 0 12px 0 20px;
+    border-left: 12px solid var(--main-black);
+    cursor: pointer;
+}
+.product-basket-select option:hover{
+    background-image: none;
+    background-color: var(--main-green) !important;
+}
+
+
+.product-pay-container{
+    direction: rtl;
+    background-color: var(--main-green);
+    border-radius: 12px;
+    padding: 20px;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    position: sticky;
+    top: 90px;
+}
+.promo-code-container{
+    margin-bottom: 24px;
+    height: 3.5rem;
+    gap: 5px;
+}
+.promo-code-input{
+    border: 1px solid var(--main-black);
+    outline: none;
+    height: 100%;
+    padding: 0 12px;
+    width: 100%;
+    font-size: 100%;
+    border-radius: 12px;
+}
+.promo-code-container button{
+    border-radius: 12px;
+    outline: none;
+    height: 100%;
+    padding:0 24px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    font-weight: bold;
+    background-color:var(--main-black);
+    border: 1px solid var(--main-black);
+    color: var(--main-white);
+    cursor: pointer;
+}
+.price-calcalu-container{
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 10px;
+    font-size: 16px;
+}
+.price-of-product,.price-of-delivery{
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.price-of-product div,.price-of-delivery div{
+    gap: 5px;
+}
+.total-price-container{
+    border-top: 1px solid var(--main-black);
+    padding-top: 24px;
+    margin-bottom:24px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.pay-price-btn{
+    height: 3.5rem;
+    border-radius: 12px;
+    outline: none;
+    padding:0 24px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    width:100%;
+    border:none;
+    cursor: pointer;
+}
+.pay-price-btn:hover,.promo-code-container button:hover{
+    background-color:rgb(29 30 32);
+    transition: all 0.3s;
+}

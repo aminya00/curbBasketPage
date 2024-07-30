@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="48f70d">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURB Clothing</title>
+    <link rel="icon" type="image/x-icon" href="images/header/logo.jpg">
+    <link rel="stylesheet" href="cdn/css/iziToast.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-content.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/searchPage.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <section class="header">
+        <!--//////////////// navbar //////////////////-->
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="menu-container">
+                    <div class="logo-container">
+                        <img src="images/header/logo.jpg" alt="logo">
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item store"><span>فروشگاه</span></li>
+                        <li class="menu-item men"><span>مردانه</span></li>
+                        <li class="menu-item women"><span>زنانه</span></li>
+                        <li class="menu-item accessories"><span>لوازم جانبی</span></li>
+                </div>
+                <div class="navbar-options">
+                    <div class=" search-container">
+                        <input class="search-input" type="text" placeholder="جستجو">
+                        <lord-icon class="search-icon" src="https://cdn.lordicon.com/kkvxgpti.json" delay="200"
+                            colors="primary:#ffffff" style="width:24px;height:24px">
+                        </lord-icon>
+
+                    </div>
+                    <div class="navbar-options-item wishlist">
+                        <lord-icon onMouseover="iconOnMouseOverEvent(event)"
+                            onMouseout="iconOnMouseOutWhiteEvent(event)" src="https://cdn.lordicon.com/xyboiuok.json"
+                            trigger="morph" state="morph-heart" colors="primary:#ffffff" style="width:24px;height:24px">
+                        </lord-icon>
+
+                    </div>
+                    <div class="navbar-options-item basket">
+                        <lord-icon onMouseover="iconOnMouseOverEvent(event)"
+                            onMouseout="iconOnMouseOutWhiteEvent(event)" src="https://cdn.lordicon.com/evyuuwna.json"
+                            trigger="hover" colors="primary:#ffffff" style="width:24px;height:24px">
+                        </lord-icon>
+
+                    </div>
+                    <div class="navbar-options-item user-account">
+                
+                        <lord-icon onMouseover="iconOnMouseOverEvent(event)"
+                            onMouseout="iconOnMouseOutWhiteEvent(event)" src="https://cdn.lordicon.com/kthelypq.json"
+                            trigger="hover" colors="primary:#ffffff" style="width:24px;height:24px">
+                        </lord-icon>
+                    </div>
+                    <div class="navbar-options-item hamburger-icon">
+                        <lord-icon onMouseover="iconOnMouseOverEvent(event)"
+                            onMouseout="iconOnMouseOutWhiteEvent(event)" src="https://cdn.lordicon.com/uwinmnkh.json"
+                            trigger="hover" colors="primary:#ffffff" style="width: 28px;height:28px">
+                        </lord-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/////////////// menu content ///////////////////-->
+        <div class="menu-content">
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+            <div class="menu-content-cols menu-content-col-1">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-header"><span>●</span>فروشگاه</li>
+                    <li class="cols-content-li">ژاکت</li>
+                    <li class="cols-content-li">پلیور</li>
+                    <li class="cols-content-li"> رکابی</li>
+                    <li class="cols-content-li">تاپ</li>
+                    <li class="cols-content-li">تی‌شرت</li>
+                    <li class="cols-content-li">هودی</li>
+                    <li class="cols-content-li"> شلوار</li>
+                    <li class="cols-content-li">شلوارک</li>
+                    <li class="cols-content-li">لِگ ورزشی</li>
+                </ul>
+            </div>
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+            <div class="menu-content-cols menu-content-col-2">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-header"><span>●</span>مردانه</li>
+                    <li class="cols-content-li">ژاکت</li>
+                    <li class="cols-content-li">پلیور</li>
+                    <li class="cols-content-li"> رکابی</li>
+                    <li class="cols-content-li">تی‌شرت</li>
+                    <li class="cols-content-li">هودی</li>
+                    <li class="cols-content-li"> شلوار</li>
+                    <li class="cols-content-li">شلوارک</li>
+                    <li class="cols-content-li">لِگ ورزشی</li>
+                </ul>
+            </div>
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+            <div class="menu-content-cols menu-content-col-3">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-header"><span>●</span>زنانه</li>
+                    <li class="cols-content-li">ژاکت</li>
+                    <li class="cols-content-li">پلیور</li>
+                    <li class="cols-content-li">تاپ</li>
+                    <li class="cols-content-li">تی‌شرت</li>
+                    <li class="cols-content-li">هودی</li>
+                    <li class="cols-content-li"> شلوار</li>
+                    <li class="cols-content-li">شلوارک</li>
+                    <li class="cols-content-li">لِگ ورزشی</li>
+                </ul>
+            </div>
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+            <div class="menu-content-cols menu-content-col-4">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-header"><span>●</span>لوازم جانبی</li>
+                    <li class="cols-content-li">جوراب</li>
+                    <li class="cols-content-li">کلاه</li>
+                    <li class="cols-content-li">کیف</li>
+                </ul>
+            </div>
+        </div>
+        <!--////////////////// search-result ////////////////////-->
+        <div class="search-result">
+            <div class="search-result-title">PRODUCTS</div>
+            <ul class="search-result-ul">
+               
+            </ul>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="main-boxes-container">
+            <div class="main-boxes-title">
+                <div class="main-box-title-container">
+                    <div class="title-samll-box"></div>
+                    <span class="main-boxes-title-fa">سبد خرید</span>
+                </div>
+            </div>
+            <div class="basket-page-container">
+                <div class="product-basket-container">
+                </div>
+                <div class="product-pay-container">
+                    <div class="promo-code-container">
+                        <input class="promo-code-input" type="text" placeholder="کد تخفیف را وارد کنید">
+                        <button>اعمال</button>
+                    </div>
+                    <div class="price-calcalu-container">
+                        <div class="price-of-product">
+                            <span>قیمت جزء</span>
+                            <div>
+                                <span></span>
+                                <span>T</span>
+                            </div>
+                        </div>
+                        <div class="price-of-delivery">
+                            <span>هزینه ارسال </span>
+                            <div>
+                                <span></span>
+                                <span>T</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-price-container">
+                        <span>قیمت کل </span>
+                        <div>
+                            <span></span>
+                            <span>T</span>
+                        </div>
+                    </div>
+                    <button class="pay-price-btn">تسویه حساب</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="main-footer-container">
+            <div class="footer-content-container">
+                <div class="footer-col">
+                    <ul class="footer-ul">
+                        <li class="footer-title">دسترسی سریع</li>
+                        <li class="footer-li">همه محصولات</li>
+                        <li class="footer-li">محصولات جدید</li>
+                        <li class="footer-li">محبوب‌‌ترین ها</li>
+                        <li class="footer-li">هودی</li>
+                        <li class="footer-li">تی‌شرت</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-ul">
+                        <li class="footer-title">خدمات مشتریان</li>
+                        <li class="footer-li">شرایط استفاده</li>
+                        <li class="footer-li">سیاست حریم خصوصی</li>
+                    </ul>
+                    <ul class="footer-ul">
+                        <li class="footer-title">ارتباط با ما</li>
+                        <li class="footer-li phone-number-footer">09017829922</li>
+                        <li class="footer-li">info@curbclothing.co</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-ul">
+                        <li class="footer-title">شبکه های اجتماعی</li>
+                        <li class="footer-li social-icon-li">
+                            <div class="social-icon-container">
+                                <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #181818;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title />
+                                    <path class="cls-1"
+                                        d="M83,23a22,22,0,0,1,22,22V83a22,22,0,0,1-22,22H45A22,22,0,0,1,23,83V45A22,22,0,0,1,45,23H83m0-8H45A30.09,30.09,0,0,0,15,45V83a30.09,30.09,0,0,0,30,30H83a30.09,30.09,0,0,0,30-30V45A30.09,30.09,0,0,0,83,15Z" />
+                                    <path class="cls-1"
+                                        d="M90.14,32a5.73,5.73,0,1,0,5.73,5.73A5.73,5.73,0,0,0,90.14,32Z" />
+                                    <path class="cls-1"
+                                        d="M64.27,46.47A17.68,17.68,0,1,1,46.6,64.14,17.7,17.7,0,0,1,64.27,46.47m0-8A25.68,25.68,0,1,0,90,64.14,25.68,25.68,0,0,0,64.27,38.47Z" />
+                                </svg>
+
+                            </div>
+
+                        </li>
+                        <li class="footer-li social-icon-li">
+                            <div class="social-icon-container">
+                                <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #181818;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title />
+                                    <path class="cls-1"
+                                        d="M64,32.29c.23,0,22.92,0,37.9,1.08l.66.06c2,.18,4.16.39,6.28,2.58l0,0,0,0c1,1,2.14,4.54,2.53,7.07a156,156,0,0,1,1,16.71v8.24a156.82,156.82,0,0,1-1,16.72c-.37,2.47-1.54,6.06-2.52,7l0,0,0,0c-2.11,2.18-4.32,2.39-6.27,2.58l-.68.07c-14.72,1-36.89,1.1-37.89,1.1-1.15,0-28-.27-36.57-1-.51-.08-1-.15-1.58-.21-2.28-.27-4.87-.58-6.73-2.51l0,0,0,0c-1-1-2.14-4.53-2.52-7.05a156,156,0,0,1-1-16.71V59.86a156.79,156.79,0,0,1,1-16.71c.39-2.55,1.55-6.09,2.53-7.07l0,0,0,0c2.12-2.19,4.33-2.39,6.28-2.58l.66-.06c15-1.07,37.67-1.08,37.89-1.08H64m0-6.5H64s-23.09,0-38.48,1.1c-2.15.25-6.83.27-11,4.59-3.29,3.3-4.37,10.79-4.37,10.79A162.25,162.25,0,0,0,9,59.86V68.1a162.19,162.19,0,0,0,1.1,17.59s1.07,7.49,4.37,10.78c4.19,4.32,9.68,4.19,12.13,4.65,8.8.83,37.4,1.09,37.4,1.09s23.11,0,38.51-1.13c2.15-.25,6.84-.28,11-4.6,3.29-3.29,4.37-10.78,4.37-10.78A162.26,162.26,0,0,0,119,68.11V59.87a162.27,162.27,0,0,0-1.1-17.59s-1.07-7.49-4.37-10.79c-4.18-4.32-8.87-4.35-11-4.59C87.11,25.79,64,25.79,64,25.79Z" />
+                                    <polygon class="cls-1" points="54.13 47.61 54.13 80.39 82.12 64 54.13 47.61" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="validation-container responsive-validation">
+                        <img src="images/footer/validation.png" alt="">
+                        <img src="images/footer/validation2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-brand-container">
+                <div class="brand-about-container">
+                    <div class="img-about-container">
+                        <img src="images/footer/logo-footer.png" alt="">
+                    </div>
+                    <div class="des-about-container">کرب یک شرکت ایرانی است که در زمینه طراحی، توسعه، ساخت و بازاریابی و
+                        فروش جهانی پوشاک، لوازم جانبی و خدمات هنری فعالیت دارد.</div>
+                </div>
+                <div class="validation-container">
+                    <img src="images/footer/validation.png" alt="">
+                    <img src="images/footer/validation2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-container">
+            <div class="copyright-fa">کلیه حقوق این سایت متعلق به فروشگاه اینترنتی پوشاک کِرب می باشد. ۱۳۹۸-۱۴۰۳</div>
+            <div class="copyright-en">CURB CLOTHING © COPYRIGHT ALL RIGHTS RESERVED</div>
+        </div>
+    </section>
+    <div class="login-page-container">
+        <div class="login-exit-btn">
+            <?xml version="1.0" ?><svg fill="#fff" data-name="Layer 1" height="50" id="Layer_1" viewBox="0 0 200 200" width="50" xmlns="http://www.w3.org/2000/svg"><title/><path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"/></svg>
+        </div>
+        <div class="login-container">
+            <div class="login-form signin-form">
+                <div class="login-title-container">
+                    <div class="login-title">
+                        ورود
+                    </div>
+                    <div class="login-switch-title">
+                        ثبت‌ نام  
+                    </div>
+                </div>
+                <div class="login-value-container">
+                    <div class="login-value-title">ایمیل</div>
+                    <div class="login-value-input">
+                        <input class="email-input" type="email" placeholder="ایمیل" maxlength="50">
+                    </div>
+                    <div class="invalid-login-error">ایمیل نادرست است</div>
+                </div>
+                <div class="login-value-container">
+                    <div class="login-value-title">رمز عبور</div>
+                    <div class="login-value-input">
+                        <input class="password-input" type="password" placeholder="رمز عبور" maxlength="20">
+                        <div class="password-eye hidden-password">
+                            
+                            <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 20 20" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L5.64526 6.35237C3.97039 7.49178 2.72334 9.27383 2.28011 11.3979C2.22371 11.6682 2.39712 11.9331 2.66744 11.9895C2.93776 12.0459 3.20262 11.8725 3.25903 11.6021C3.66284 9.66698 4.82362 8.06289 6.3671 7.07421L7.94894 8.65604C7.06509 9.29133 6.48947 10.3284 6.48947 11.5C6.48947 13.433 8.05647 15 9.98947 15C11.161 15 12.1981 14.4244 12.8334 13.5405L17.1464 17.8536C17.3417 18.0488 17.6583 18.0488 17.8536 17.8536C18.0488 17.6583 18.0488 17.3417 17.8536 17.1464L2.85355 2.14645Z" fill="#fff"/><path d="M10.1238 8.00253L13.4869 11.3657C13.418 9.5395 11.95 8.07143 10.1238 8.00253Z" fill="#fff"/><path d="M7.53104 5.4098L8.3341 6.21286C8.87141 6.07353 9.43009 6 9.99995 6C13.2056 6 16.0574 8.32688 16.7409 11.6021C16.7973 11.8725 17.0622 12.0459 17.3325 11.9895C17.6028 11.933 17.7762 11.6682 17.7198 11.3979C16.9425 7.67312 13.6934 5 9.99995 5C9.14478 5 8.31342 5.14331 7.53104 5.4098Z" fill="#fff"/></svg>
+                        </div>
+                    </div>
+                    <div class="invalid-login-error"> رمز عبور باید حداقل 8 حرف داشته باشد</div>
+
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox">
+                    <div class="remmember-me-title">من را به خاطر بسپار</div>
+                </div>
+                <div class="login-btn signin-btn ">
+                    ورود
+                </div>
+            </div>
+            <div class="login-form signup-form notActive-form">
+                <div class="login-title-container">
+                    <div class="login-title">
+                        ثبت نام
+                    </div>
+                    <div class="login-switch-title">
+                        ورود
+                    </div>
+                </div>
+                <div class="login-value-container">
+                    <div class="login-value-title">نام کاربری</div>
+                    <div class="login-value-input">
+                        <input class="username-input" type="email" placeholder="نام کاربری" maxlength="20">
+                    </div>
+                    <div class="invalid-login-error">نام کاربری باید حداقل 6 حرف داشته باشد</div>
+                </div>
+                <div class="login-value-container">
+                    <div class="login-value-title">ایمیل</div>
+                    <div class="login-value-input">
+                        <input class="email-input" type="email" placeholder="ایمیل" maxlength="50">
+                    </div>
+                    <div class="invalid-login-error">ایمیل نادرست است</div>
+                </div>
+               
+                <div class="login-value-container">
+                    <div class="login-value-title">رمز عبور</div>
+                    <div class="login-value-input">
+                        <input class="password-input" type="password" placeholder="رمز عبور" maxlength="20">
+                        <div class="password-eye hidden-password">
+                          
+                            <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 20 20" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L5.64526 6.35237C3.97039 7.49178 2.72334 9.27383 2.28011 11.3979C2.22371 11.6682 2.39712 11.9331 2.66744 11.9895C2.93776 12.0459 3.20262 11.8725 3.25903 11.6021C3.66284 9.66698 4.82362 8.06289 6.3671 7.07421L7.94894 8.65604C7.06509 9.29133 6.48947 10.3284 6.48947 11.5C6.48947 13.433 8.05647 15 9.98947 15C11.161 15 12.1981 14.4244 12.8334 13.5405L17.1464 17.8536C17.3417 18.0488 17.6583 18.0488 17.8536 17.8536C18.0488 17.6583 18.0488 17.3417 17.8536 17.1464L2.85355 2.14645Z" fill="#fff"/><path d="M10.1238 8.00253L13.4869 11.3657C13.418 9.5395 11.95 8.07143 10.1238 8.00253Z" fill="#fff"/><path d="M7.53104 5.4098L8.3341 6.21286C8.87141 6.07353 9.43009 6 9.99995 6C13.2056 6 16.0574 8.32688 16.7409 11.6021C16.7973 11.8725 17.0622 12.0459 17.3325 11.9895C17.6028 11.933 17.7762 11.6682 17.7198 11.3979C16.9425 7.67312 13.6934 5 9.99995 5C9.14478 5 8.31342 5.14331 7.53104 5.4098Z" fill="#fff"/></svg>
+                        </div>
+                    </div>
+                    <div class="invalid-login-error"> رمز عبور باید حداقل 8 حرف داشته باشد</div>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox">
+                    <div class="remmember-me-title">قوانین را میپذیرم</div>
+                </div>
+                <div class="login-btn signup-btn notActive-btn">
+                    ثبت نام
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="responsive-search-page">
+        <div class="responsive-search-page-header">
+            <div class="search-container responsive-search-container">
+                <input class="search-input responsive-search-input" type="text" placeholder="جستجو">
+
+                <lord-icon class="search-icon responsive-search-icon" src="https://cdn.lordicon.com/kkvxgpti.json"
+                    delay="200" colors="primary:#ffffff" style="width:24px;height:24px">
+                </lord-icon>
+            </div>
+            <div class="login-exit-btn search-exit-btn">
+                <?xml version="1.0" ?><svg fill="#fff" data-name="Layer 1" height="50" id="Layer_1"
+                    viewBox="0 0 200 200" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <title />
+                    <path
+                        d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="search-result responsive-search-result">
+            <div class="search-result-title responsive-search-result-title">PRODUCTS</div>
+            <ul class="search-result-ul responsive-search-result-ul">
+            </ul>
+        </div>
+    </div>
+    <div class="hamburger-menu-container">
+        <div class="filter-item filter-title-contaienr">
+            <div class="filter-item-title filter-title">فهرست</div>
+            <div class="menu-item-icon ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </div>
+        </div>
+        <div class="filter-item filter-btn-open-content">
+            <div class="filter-item-title">فروشگاه</div>
+            <div class="menu-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div>
+            <div class="menu-content-cols menu-content-col-1">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-li">ژاکت</li>
+                    <li class="cols-content-li">پلیور</li>
+                    <li class="cols-content-li"> رکابی</li>
+                    <li class="cols-content-li">تاپ</li>
+                    <li class="cols-content-li">تی‌شرت</li>
+                    <li class="cols-content-li">هودی</li>
+                    <li class="cols-content-li"> شلوار</li>
+                    <li class="cols-content-li">شلوارک</li>
+                    <li class="cols-content-li">لِگ ورزشی</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter-item filter-btn-open-content">
+            <div class="filter-item-title">مردانه</div>
+            <div class="menu-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div>
+            <div class="menu-content-cols menu-content-col-1">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-li">ژاکت</li>
+                    <li class="cols-content-li">پلیور</li>
+                    <li class="cols-content-li"> رکابی</li>
+                    <li class="cols-content-li">تی‌شرت</li>
+                    <li class="cols-content-li">هودی</li>
+                    <li class="cols-content-li"> شلوار</li>
+                    <li class="cols-content-li">شلوارک</li>
+                    <li class="cols-content-li">لِگ ورزشی</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter-item filter-btn-open-content">
+            <div class="filter-item-title">زنانه</div>
+            <div class="menu-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="dotted-border">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div>
+            <div class="menu-content-cols menu-content-col-1">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-li">ژاکت</li>
+                    <li class="cols-content-li">پلیور</li>
+                    <li class="cols-content-li">تاپ</li>
+                    <li class="cols-content-li">تی‌شرت</li>
+                    <li class="cols-content-li">هودی</li>
+                    <li class="cols-content-li"> شلوار</li>
+                    <li class="cols-content-li">شلوارک</li>
+                    <li class="cols-content-li">لِگ ورزشی</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter-item filter-btn-open-content">
+            <div class="filter-item-title">لوازم جانبی</div>
+            <div class="menu-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="dotted-border">. . . . . . . . . . </div>
+            <div class="menu-content-cols menu-content-col-1">
+                <ul class="cols-content-ul">
+                    <li class="cols-content-li">جوراب</li>
+                    <li class="cols-content-li">کلاه</li>
+                    <li class="cols-content-li">کیف</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <a href="https://lordicon.com/">Icons by Lordicon.com</a> -->
+    <script src="js/lordIcon.js"></script>
+    <script src="cdn/js/iziToast.min.js"></script>
+    <script src="js/projectCalculations.js"></script>
+    <script src="js/projectFunctions.js"></script>
+    <script src="js/iconHandler.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/searchPage.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/switchPage.js"></script>
+</body>
+
+</html>
