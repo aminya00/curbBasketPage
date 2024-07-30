@@ -6,7 +6,21 @@ let priceOfDelivery = $.querySelector(".price-of-delivery div span");
 let totalPriceContainer = $.querySelector(".total-price-container div span");
 let mainBoxesTitleFa = $.querySelector(".main-boxes-title-fa");
 
-
+let basketResultDB=null
+let myBasketDB=indexedDB.open("basketDB",1)
+myBasketDB.addEventListener("success",(e)=>{
+  basketResultDB=e.target.result
+  basketFetch()
+  preLoaderDisappear()  
+})
+myBasketDB.addEventListener("upgradeneeded",(e)=>{
+  basketResultDB=e.target.result
+  if (!basketResultDB.objectStoreNames.contains("basket")){
+    basketResultDB.createObjectStore("basket",{
+      keyPath:["name","size"]
+    })
+  }
+})
 
 function basketFetch(){
 let basketTransaction=basketResultDB.transaction("basket","readwrite")
@@ -38,7 +52,6 @@ let basketTransaction=basketResultDB.transaction("basket","readwrite")
   })
 }
 
-basketFetch()
 
 function calculateProductPrices(){
     let basketItemNum=0

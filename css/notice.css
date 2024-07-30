@@ -1,0 +1,28 @@
+.notice-container{
+    padding: 48px;
+    border: 1px solid var(--main-green);
+    border-radius: 12px;
+    box-shadow: 0 1px 5px var(--main-green);
+}
+.notice-title{
+    font-weight: bold;
+    text-shadow: 1px 2px var(--main-green);
+    color: var(--main-white);
+}
+.notice-title-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 36px;
+}
+.notice-text{
+    color: var(--main-white);
+    font-size: var(--desc-font-size);
+    line-height: 45px;
+    padding-bottom: 36px;
+}
+.notice-container>div:nth-child(odd)>span{
+    font-size: 32px ;
+}
+.notice-container>div:first-child>span{
+    font-size: var(--title-font-size) !important;
+}

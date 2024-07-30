@@ -1156,5 +1156,6 @@ function noticePageMaker(noticeContainer,noticeSubject){
 }
 function preLoaderDisappear(){
   loaderContainer.style.display="none";
-  $.body.style.overflow="scroll"
+  $.body.style.overflowY="scroll"
+  $.body.style.overflowX="hidden"
 }
