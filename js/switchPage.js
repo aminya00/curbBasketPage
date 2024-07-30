@@ -43,7 +43,7 @@ menuItemArr.forEach(menuItem=>{
 })
 colsContentLiArr.forEach(colsContentLi=>{
     colsContentLi.addEventListener("click",e=>{
-        switchToProductPage("category",`${colsContentLi.innerHTML}`,`${colsContentLi.innerHTML}`)
+        switchToProductPage("category",`${(colsContentLi.innerHTML).trim()}`,`${(colsContentLi.innerHTML).trim()}`)
     })
 })
 navbarOptionBasket.addEventListener("click",e=>{
@@ -54,11 +54,11 @@ navbarOptionWishlist.addEventListener("click",e=>{
 })
 
 function searchResultLiOnClick(e){
-    switchToSingleProductPage(e.currentTarget.lastElementChild.firstElementChild.nextElementSibling.innerHTML)
+    switchToSingleProductPage((e.currentTarget.lastElementChild.firstElementChild.nextElementSibling.innerHTML).trim())
 }
 function productContainerOnClick(e){
     if(!(e.target.onmouseover)){
-        switchToSingleProductPage(e.currentTarget.lastElementChild.previousElementSibling.innerHTML)
+        switchToSingleProductPage((e.currentTarget.lastElementChild.previousElementSibling.innerHTML).trim())
     }
 }
 footerLiArr.forEach(footerLi=>{
@@ -75,31 +75,17 @@ footerLiArr.forEach(footerLi=>{
             switchToProductPage("collection","most popular","محبوب‌‌ترین ها")
             
         }else if((footerLi.innerHTML).trim()=="هودی" || (footerLi.innerHTML).trim()=="تی‌شرت"){
-            switchToProductPage("category",`${footerLi.innerHTML}`,`${footerLi.innerHTML}`)
+            switchToProductPage("category",`${(footerLi.innerHTML).trim()}`,`${(footerLi.innerHTML).trim()}`)
     
         }else if((footerLi.innerHTML).trim()=="سیاست حریم خصوصی" || (footerLi.innerHTML).trim()=="شرایط استفاده"){
-            switchToNoticePage(`${footerLi.innerHTML}`)
+            switchToNoticePage(`${(footerLi.innerHTML).trim()}`)
         }
     })
 })
 
 function productBasketOnClick(e){
     if(!(e.target.onmouseover)){
-        switchToSingleProductPage(e.currentTarget.lastElementChild.firstElementChild.firstElementChild.innerHTML)
+        switchToSingleProductPage((e.currentTarget.lastElementChild.firstElementChild.firstElementChild.innerHTML).trim())
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
