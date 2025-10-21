@@ -17,9 +17,8 @@
 }
 .product-basket{
     padding: 20px;
-    border: 1px solid var(--main-green);
     border-radius: 12px;
-    box-shadow: 0 1px 5px var(--main-green);
+    box-shadow: 0 0 5px rgb(72, 247, 13, 0.7);
 }
 .product-basket-img{
     width: 192px;
